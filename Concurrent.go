@@ -3,6 +3,7 @@ import "fmt"
 func main(){
 	ch:=make(chan int)
 	go call(ch)
+	
 	for a:=range ch{
 		fmt.Println(a);;
 	}
